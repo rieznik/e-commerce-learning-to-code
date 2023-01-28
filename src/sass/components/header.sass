@@ -1,0 +1,67 @@
+@use './global'
+@use './utils'
+
+.container
+  margin: 0 10px
+
+.header
+  padding: 8px 0
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+
+.header__mobile-menu
+  margin-right: 35px
+
+.burger-menu
+  @include utils.reset-button
+  width: 20px
+  height: 9px
+
+.burger-menu__line
+  display: block
+  border-top: 1px solid global.$black
+  margin-bottom: 3px
+
+.burger-menu__line_short
+  @extend .burger-menu__line
+  width: 50%
+
+.icon
+  width: 100%
+  height: 100%
+
+.logo
+  width: 95px
+  height: 25px
+
+.search
+  @include utils.reset-button
+  width: 17px
+  height: 17px
+  margin-right: 20px
+  & .icon
+    fill: global.$black
+
+.shopping-bag
+  @include utils.reset-button
+  width: 14px
+  height: 17px
+  position: relative
+  & .icon
+    fill: none
+    stroke: global.$black
+
+.shopping-bag__counter
+  font-family: global.$roboto
+  font-size: 0.571rem
+  line-height: 0.643rem
+  color: global.$white
+  padding: 1px
+  position: absolute
+  min-width: 11px
+  min-height: 11px
+  background-color: global.$primary-color
+  border-radius: 50%
+  right: -3px
+  bottom: -3px

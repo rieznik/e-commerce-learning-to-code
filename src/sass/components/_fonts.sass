@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+@mixin font ($name, $weight, $style: normal)
+  font-family: '#{$name}'
+  src: url('/src/fonts/#{$name}Font/#{$name}-#{$weight}.woff') format('woff')
+  src: url('/src/fonts/#{$name}Font/#{$name}-#{$weight}.ttf') format('ttf')
+  font-weight: $weight
+  font-style: $style
+  display: swap
+
+@font-face
+  @include font (Raleway, 600)
+
+@font-face
+  @include font (Raleway, 300)
