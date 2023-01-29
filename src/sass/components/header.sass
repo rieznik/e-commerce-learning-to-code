@@ -5,13 +5,45 @@
   padding: 8px 0
   display: flex
   justify-content: space-between
-  align-items: flex-end
+  align-items: center
+  font-size: 1.143rem
+  font-weight: 400
+  @include utils.media(1000px)
+    padding: 25px 0
+    align-items: center
+
+.header__left
+  width: 35%
+
+.header__right
+  width: 35%
+  display: flex
+  justify-content: end
+  align-items: center
+  gap: 20px
+
+.header__desktop
+  display: none
+  @include utils.media(1000px)
+    display: flex
+
+.nav-list
+  display: flex
+  gap: 30px
+
+.nav-list__item
+  display: inline
+
+.nav-list__item_active
+  a
+    color: global.$primary-color
+    font-weight: 700
 
 .header__mobile-menu
-  margin-right: 35px
+  @include utils.media(1000px)
+    display: none
 
 .burger-menu
-  @include utils.reset-button
   width: 20px
   height: 9px
 
@@ -31,28 +63,33 @@
 .logo
   width: 95px
   height: 25px
+  @include utils.media(1000px)
+    width: 184px
+    height: 48px
 
 .search
-  @include utils.reset-button
   width: 17px
   height: 17px
-  margin-right: 20px
   & .icon
     fill: global.$black
+  @include utils.media(1000px)
+    width: 20px
+    height: 20px
 
 .shopping-bag
-  @include utils.reset-button
   width: 14px
   height: 17px
   position: relative
   & .icon
     fill: none
     stroke: global.$black
+  @include utils.media(1000px)
+    width: 20px
+    height: 24px
 
 .shopping-bag__counter
   font-family: global.$roboto
   font-size: 0.571rem
-  line-height: 0.643rem
   color: global.$white
   padding: 1px
   position: absolute
@@ -62,3 +99,7 @@
   border-radius: 50%
   right: -3px
   bottom: -3px
+  @include utils.media(1000px)
+    font-size: 0.714rem
+    min-width: 13px
+    min-height: 13px

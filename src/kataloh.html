@@ -11,29 +11,36 @@
 
 <body>
   <header class="header container">
-    <!-- <nav>
-      <ul>
-        <li><a href="/">Каталог</a></li>
-        <li><a href="/">Знижки</a></li>
-        <li><a href="/">Блог</a></li>
-        <li><a href="/">Про нас</a></li>
-      </ul>
-    </nav> -->
-    <div class="header__mobile-menu">
-      <button class="burger-menu">
-        <span class="burger-menu__line"></span>
-        <span class="burger-menu__line"></span>
-        <span class="burger-menu__line_short"></span>
-      </button>
+    <div class="header__left">
+      <nav class="header__desktop">
+        <ul class="nav-list">
+          <li class="nav-list__item nav-list__item_active"><a href="/">Каталог</a></li>
+          <li class="nav-list__item"><a href="/">Знижки</a></li>
+          <li class="nav-list__item"><a href="/">Блог</a></li>
+          <li class="nav-list__item"><a href="/">Про нас</a></li>
+        </ul>
+      </nav>
+      <div class="header__mobile-menu">
+        <button class="burger-menu">
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line_short"></span>
+        </button>
+      </div>
     </div>
 
     <img class="logo"
       srcset="images/etnodim-logo-552w.png 552w, images/etnodim-logo-368w.png 368w, images/etnodim-logo-184w.png 184w"
       sizes="(min-width: 800px) 184px, 95px" src="images/etnodim-logo-368w.png" alt="Лого Етнодім">
-    <div>
-      <!-- <button>UA</button>
-      <button>₴</button>
-      <a href=“tel:+380978889292”>+38 097 888 92 92</a> -->
+    <div class="header__right">
+      <button class="chevron header__desktop">UA
+        <span class="chevron__icon"><svg class="icon">
+            <use href="#chevron-down"></use>
+          </svg></span></button>
+      <button class="chevron header__desktop ">₴ <span class="chevron__icon"><svg class="icon">
+            <use href="#chevron-down"></use>
+          </svg></span></button>
+      <a class="header__desktop" href="tel:+380978889292">+38 097 888 92 92</a>
       <button class="search">
         <svg class="icon">
           <use href="#search-icon"></use>
@@ -71,7 +78,8 @@
       </path>
     </symbol>
     <symbol viewBox="0 0 10 6" id="chevron-down">
-      <path stroke="#000" d="m1 1 4 4 4-4"></path>
+      <!-- stroke="#000" -->
+      <path d="m1 1 4 4 4-4"></path>
     </symbol>
     <symbol fill="none" viewBox="0 0 16 17" id="circle-arrow">
       <path fill="#000"

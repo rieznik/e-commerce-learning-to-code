@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "Raleway";
+  src: url("/src/fonts/RalewayFont/Raleway-700.woff") format("woff");
+  src: url("/src/fonts/RalewayFont/Raleway-700.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Raleway";
   src: url("/src/fonts/RalewayFont/Raleway-600.woff") format("woff");
   src: url("/src/fonts/RalewayFont/Raleway-600.ttf") format("ttf");
   font-weight: 600;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/src/fonts/RalewayFont/Raleway-400.woff") format("woff");
+  src: url("/src/fonts/RalewayFont/Raleway-400.ttf") format("ttf");
+  font-weight: 400;
   font-style: normal;
   display: swap;
 }
@@ -26,30 +42,116 @@ html {
   font-size: 14px;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .container {
   margin: 0 10px;
 }
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1000px) {
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1300px) {
   .container {
     max-width: 1280px;
     margin: 0 auto;
   }
 }
 
+.chevron {
+  display: flex;
+}
+
+.chevron__icon {
+  display: flex;
+  align-self: center;
+  width: 12px;
+  height: 6px;
+}
+.chevron__icon .icon {
+  fill: none;
+  stroke: #000000;
+}
+
 .header {
   padding: 8px 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  font-size: 1.143rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    padding: 25px 0;
+    align-items: center;
+  }
 }
 
-.header__mobile-menu {
-  margin-right: 35px;
+.header__left {
+  width: 35%;
+}
+
+.header__right {
+  width: 35%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__desktop {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .header__desktop {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list__item {
+  display: inline;
+}
+
+.nav-list__item_active a {
+  color: #DA1F39;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__mobile-menu {
+    display: none;
+  }
 }
 
 .burger-menu {
-  border: none;
-  background: none;
   width: 20px;
   height: 9px;
 }
@@ -73,21 +175,28 @@ html {
   width: 95px;
   height: 25px;
 }
+@media screen and (min-width: 1000px) {
+  .logo {
+    width: 184px;
+    height: 48px;
+  }
+}
 
 .search {
-  border: none;
-  background: none;
   width: 17px;
   height: 17px;
-  margin-right: 20px;
 }
 .search .icon {
   fill: #000000;
 }
+@media screen and (min-width: 1000px) {
+  .search {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .shopping-bag {
-  border: none;
-  background: none;
   width: 14px;
   height: 17px;
   position: relative;
@@ -96,11 +205,16 @@ html {
   fill: none;
   stroke: #000000;
 }
+@media screen and (min-width: 1000px) {
+  .shopping-bag {
+    width: 20px;
+    height: 24px;
+  }
+}
 
 .shopping-bag__counter {
   font-family: "Roboto", sans-serif;
   font-size: 0.571rem;
-  line-height: 0.643rem;
   color: #ffffff;
   padding: 1px;
   position: absolute;
@@ -110,4 +224,11 @@ html {
   border-radius: 50%;
   right: -3px;
   bottom: -3px;
+}
+@media screen and (min-width: 1000px) {
+  .shopping-bag__counter {
+    font-size: 0.714rem;
+    min-width: 13px;
+    min-height: 13px;
+  }
 }
