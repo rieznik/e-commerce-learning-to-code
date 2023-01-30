@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
-
 @mixin font ($name, $weight, $style: normal)
   font-family: '#{$name}'
-  src: url('/src/fonts/#{$name}Font/#{$name}-#{$weight}.woff') format('woff')
-  src: url('/src/fonts/#{$name}Font/#{$name}-#{$weight}.ttf') format('ttf')
+  src: url('./../../fonts/#{$name}/#{$name}-#{$weight}.woff2') format('woff2')
+  src: url('./../../fonts/#{$name}/#{$name}-#{$weight}.woff') format('woff')
+  src: url('./../../fonts/#{$name}/#{$name}-#{$weight}.ttf') format('truetype')
   font-weight: $weight
   font-style: $style
   display: swap
+
+@font-face
+  @include font (Dela, 400)
+
+@font-face
+  @include font (Roboto, 400)
 
 @font-face
   @include font (Raleway, 700)

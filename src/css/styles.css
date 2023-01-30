@@ -1,32 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
-  font-family: "Raleway";
-  src: url("/src/fonts/RalewayFont/Raleway-700.woff") format("woff");
-  src: url("/src/fonts/RalewayFont/Raleway-700.ttf") format("ttf");
-  font-weight: 700;
+  font-family: "Dela";
+  src: url("../fonts/Dela/Dela-400.woff2") format("woff2");
+  src: url("../fonts/Dela/Dela-400.woff") format("woff");
+  src: url("../fonts/Dela/Dela-400.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   display: swap;
 }
 @font-face {
-  font-family: "Raleway";
-  src: url("/src/fonts/RalewayFont/Raleway-600.woff") format("woff");
-  src: url("/src/fonts/RalewayFont/Raleway-600.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-  display: swap;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("/src/fonts/RalewayFont/Raleway-400.woff") format("woff");
-  src: url("/src/fonts/RalewayFont/Raleway-400.ttf") format("ttf");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-400.woff2") format("woff2");
+  src: url("../fonts/Roboto/Roboto-400.woff") format("woff");
+  src: url("../fonts/Roboto/Roboto-400.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   display: swap;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("/src/fonts/RalewayFont/Raleway-300.woff") format("woff");
-  src: url("/src/fonts/RalewayFont/Raleway-300.ttf") format("ttf");
+  src: url("../fonts/Raleway/Raleway-700.woff2") format("woff2");
+  src: url("../fonts/Raleway/Raleway-700.woff") format("woff");
+  src: url("../fonts/Raleway/Raleway-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-600.woff2") format("woff2");
+  src: url("../fonts/Raleway/Raleway-600.woff") format("woff");
+  src: url("../fonts/Raleway/Raleway-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-400.woff2") format("woff2");
+  src: url("../fonts/Raleway/Raleway-400.woff") format("woff");
+  src: url("../fonts/Raleway/Raleway-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-300.woff2") format("woff2");
+  src: url("../fonts/Raleway/Raleway-300.woff") format("woff");
+  src: url("../fonts/Raleway/Raleway-300.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   display: swap;
@@ -38,7 +59,7 @@
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 14px;
 }
 
@@ -56,6 +77,7 @@ button {
   background: none;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
 }
 
 .container {
@@ -102,6 +124,7 @@ button {
   align-items: center;
   font-size: 1.143rem;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1000px) {
   .header {
@@ -117,7 +140,7 @@ button {
 .header__right {
   width: 35%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
 }
@@ -175,11 +198,18 @@ button {
   width: 95px;
   height: 25px;
 }
+.logo .icon {
+  fill: #000000;
+}
 @media screen and (min-width: 1000px) {
   .logo {
     width: 184px;
     height: 48px;
   }
+}
+
+.header__phone {
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .search {
@@ -213,7 +243,7 @@ button {
 }
 
 .shopping-bag__counter {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 0.571rem;
   color: #ffffff;
   padding: 1px;
@@ -231,4 +261,74 @@ button {
     min-width: 13px;
     min-height: 13px;
   }
+}
+
+.title {
+  font-family: Dela, serif;
+  font-size: 1.286rem;
+  font-weight: 400;
+  line-height: 140.3%;
+  text-transform: uppercase;
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.filter {
+  float: left;
+}
+
+.filter__mobile-btn {
+  font-size: 0.857rem;
+  font-weight: 300;
+}
+
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.857rem;
+  font-weight: 300;
+}
+
+.sort__btn {
+  margin-left: 5px;
+  font-weight: inherit;
+}
+
+.product-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .product-list {
+    gap: 50px;
+  }
+}
+
+.product {
+  flex-basis: calc(50% - 10px);
+}
+@media screen and (min-width: 1000px) {
+  .product {
+    flex-basis: calc(50% - 25px);
+  }
+}
+
+.product__image {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.product__title {
+  font-size: 0.857rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.product__price {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 166.2%;
+  font-feature-settings: "pnum" on, "lnum" on;
 }

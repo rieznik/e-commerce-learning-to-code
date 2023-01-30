@@ -8,6 +8,7 @@
   align-items: center
   font-size: 1.143rem
   font-weight: 400
+  margin-bottom: 20px
   @include utils.media(1000px)
     padding: 25px 0
     align-items: center
@@ -18,7 +19,7 @@
 .header__right
   width: 35%
   display: flex
-  justify-content: end
+  justify-content: flex-end
   align-items: center
   gap: 20px
 
@@ -63,9 +64,14 @@
 .logo
   width: 95px
   height: 25px
+  & .icon
+    fill: global.$black
   @include utils.media(1000px)
     width: 184px
     height: 48px
+
+.header__phone
+  @include utils.fix-numbers
 
 .search
   width: 17px
