@@ -364,6 +364,43 @@ button {
   font-weight: 300;
 }
 
+.layout {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .layout {
+    display: flex;
+    gap: 10px;
+    margin-right: 13px;
+  }
+}
+
+.layout__btn {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.layout__btn span {
+  background-color: #C4C4C4;
+}
+
+.layout__btn_four span {
+  width: 6px;
+  height: 6px;
+}
+
+.layout__btn_nine span {
+  width: 4px;
+  height: 4px;
+}
+
+.layout__btn_active span {
+  background-color: #565656;
+}
+
 .sort {
   display: flex;
   font-size: 0.857rem;
