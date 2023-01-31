@@ -1,3 +1,9 @@
+//! Colors
+$primary-color: #DA1F39
+$white: #ffffff
+$black: #000000
+$grey: #F4F4F4
+
 @mixin reset-button
   border: none
   background: none
@@ -8,3 +14,55 @@
 @mixin media($width)
   @media screen and (min-width: $width)
     @content
+
+//! Font variables
+$raleway: Raleway, sans-serif
+$dela: Dela, serif
+$roboto: Roboto, sans-serif
+
+//! Typography
+// Raleway is set for the <html>, so only specifying sizes and weights here.
+
+@mixin small-light
+  font-size: 0.857rem //12px
+  font-weight: 300
+
+@mixin small-semibold
+  font-size: 0.857rem //12px
+  font-weight: 600
+
+@mixin medium-light
+  font-weight: 300 // 14px is default
+
+@mixin medium-semibold
+  font-weight: 600 // 14px is default
+
+@mixin medium-bold
+  font-weight: 700 // 14px is default
+
+@mixin large-light
+  font-size: 1.143rem // 16px
+  font-weight: 300
+
+@mixin large-regular
+  font-size: 1.143rem // 16px
+  font-weight: 400
+
+@mixin large-bold
+  font-size: 1.143rem // 16px
+  font-weight: 700
+
+@mixin dela-small
+  font-family: $dela
+  font-size: 1.286rem // 18px
+  font-weight: 400
+
+@mixin dela-medium
+  font-family: $dela
+  font-size: 2.571rem // 36px
+  font-weight: 400
+
+@mixin dela-large
+  font-family: $dela
+  font-size: 4.571rem // 64px
+  font-weight: 400

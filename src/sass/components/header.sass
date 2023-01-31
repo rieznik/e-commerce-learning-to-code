@@ -2,13 +2,12 @@
 @use './utils'
 
 .header
+  @include utils.large-regular
   padding: 8px 0
+  margin-bottom: 20px
   display: flex
   justify-content: space-between
   align-items: center
-  font-size: 1.143rem
-  font-weight: 400
-  margin-bottom: 20px
   @include utils.media(1000px)
     padding: 25px 0
     align-items: center
@@ -38,8 +37,8 @@
 
 .nav-list__item_active
   a
-    color: global.$primary-color
-    font-weight: 700
+    color: utils.$primary-color
+    @include utils.medium-bold
 
 .header__mobile-menu
   @include utils.media(1000px)
@@ -51,7 +50,7 @@
 
 .burger-menu__line
   display: block
-  border-top: 1px solid global.$black
+  border-top: 1px solid utils.$black
   margin-bottom: 3px
 
 .burger-menu__line_short
@@ -66,7 +65,7 @@
   width: 95px
   height: 25px
   & .icon
-    fill: global.$black
+    fill: utils.$black
   @include utils.media(1000px)
     width: 184px
     height: 48px
@@ -78,7 +77,7 @@
   width: 17px
   height: 17px
   & .icon
-    fill: global.$black
+    fill: utils.$black
   @include utils.media(1000px)
     width: 20px
     height: 20px
@@ -89,20 +88,20 @@
   position: relative
   & .icon
     fill: none
-    stroke: global.$black
+    stroke: utils.$black
   @include utils.media(1000px)
     width: 20px
     height: 24px
 
 .shopping-bag__counter
-  font-family: global.$roboto
+  font-family: utils.$roboto
   font-size: 0.571rem
-  color: global.$white
+  color: utils.$white
   padding: 1px
   position: absolute
   min-width: 11px
   min-height: 11px
-  background-color: global.$primary-color
+  background-color: utils.$primary-color
   border-radius: 50%
   right: -3px
   bottom: -3px

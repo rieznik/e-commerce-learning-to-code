@@ -61,6 +61,7 @@
 html {
   font-family: Raleway, sans-serif;
   font-size: 14px;
+  font-weight: 400;
 }
 
 ul {
@@ -118,13 +119,13 @@ button {
 }
 
 .header {
+  font-size: 1.143rem;
+  font-weight: 400;
   padding: 8px 0;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.143rem;
-  font-weight: 400;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1000px) {
   .header {
@@ -280,8 +281,8 @@ button {
 }
 
 .breadcrumb__item {
-  font-weight: 300;
   font-size: 0.857rem;
+  font-weight: 300;
 }
 .breadcrumb__item ::after {
   content: "";
@@ -292,6 +293,7 @@ button {
   margin-left: 5px;
 }
 .breadcrumb__item a {
+  font-size: 0.857rem;
   font-weight: 600;
 }
 
@@ -307,6 +309,7 @@ button {
 @media screen and (min-width: 1000px) {
   .filter {
     display: revert;
+    padding-top: 20px;
     grid-column: 1/2;
   }
 }
@@ -345,7 +348,9 @@ button {
 }
 @media screen and (min-width: 1000px) {
   .title {
+    font-family: Dela, serif;
     font-size: 2.571rem;
+    font-weight: 400;
     order: 2;
   }
 }
@@ -402,9 +407,9 @@ button {
 }
 
 .sort {
-  display: flex;
   font-size: 0.857rem;
   font-weight: 300;
+  display: flex;
 }
 @media screen and (min-width: 1000px) {
   .sort {
@@ -452,7 +457,6 @@ button {
 }
 
 .product__price {
-  font-size: 1rem;
   font-weight: 700;
   line-height: 166.2%;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -466,7 +470,6 @@ button {
 
 .pagination__load-more {
   font-weight: 600;
-  font-size: 1rem;
   text-transform: uppercase;
   display: flex;
   gap: 7px;

@@ -1,14 +1,4 @@
 @use './_utils'
-// Colors
-$primary-color: #DA1F39
-$white: #ffffff
-$black: #000000
-$grey: #F4F4F4
-
-// Font variables
-$raleway: Raleway, sans-serif
-$dela: Dela, serif
-$roboto: Roboto, sans-serif
 
 // Global & reused classes
 *
@@ -17,8 +7,9 @@ $roboto: Roboto, sans-serif
   box-sizing: border-box
 
 html
-  font-family: $raleway
+  font-family: utils.$raleway
   font-size: 14px
+  font-weight: 400
 
 ul
   list-style: none
@@ -56,4 +47,4 @@ button
   height: 6px
   & .icon
     fill: none
-    stroke: $black
+    stroke: utils.$black
