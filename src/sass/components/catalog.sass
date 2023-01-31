@@ -154,6 +154,8 @@
 .product__title
   @include utils.small-light
   margin-bottom: 5px
+  @include utils.media(1000px)
+    @include utils.medium-light
 
 .product__price
   @include utils.medium-bold

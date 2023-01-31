@@ -169,6 +169,7 @@ button {
 
 .nav-list__item_active a {
   color: #DA1F39;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -486,8 +487,15 @@ button {
   font-weight: 300;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 1000px) {
+  .product__title {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
 
 .product__price {
+  font-size: 1rem;
   font-weight: 700;
   line-height: 166.2%;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -500,6 +508,7 @@ button {
 }
 
 .pagination__load-more {
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   display: flex;
