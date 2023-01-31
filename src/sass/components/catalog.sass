@@ -163,13 +163,15 @@
   @include utils.fix-numbers
 
 .pagination
-  display: flex
-  justify-content: center
+  display: grid
   margin-bottom: 50px
+  @include utils.media(1000px)
+    grid-template-columns: repeat(3, 1fr)
 
 .pagination__load-more
   @include utils.medium-semibold
   text-transform: uppercase
+  justify-self: center
   display: flex
   gap: 7px
   text-decoration: underline
@@ -177,3 +179,19 @@
   & span
     height: 1.15em
     width: 1em
+  @include utils.media(1000px)
+    grid-column: 2 / 3
+
+.pagination__pages-block
+  display: none
+  @include utils.media(1000px)
+    display: revert
+    grid-column: 3 / 4
+    justify-self: end
+
+.pagination__page-list
+  display: flex
+  gap: 10px
+
+.pagination__page-item
+  @include utils.medium-bold
