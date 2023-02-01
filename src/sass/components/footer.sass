@@ -1,0 +1,111 @@
+@use './_utils'
+
+.footer
+  background-color: utils.$footer-grey
+  padding-bottom: 20px
+  @include utils.media(1000px)
+    padding-bottom: 70px
+
+.scroll-top-btn
+  width: 16px
+  height: 30px
+  stroke: utils.$primary-color
+  display: block
+  margin: 0 auto
+  translate: 0px -23px
+  @include utils.media(1000px)
+    width: 30px
+    height: 56px
+    translate: 0px -40px
+
+.footer__grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  @include utils.media(1000px)
+    grid-template-columns: 42% 35% 23%
+    grid-template-rows: auto minmax(130px, auto)
+
+.footer__logo
+  width: 92px
+  height: 11px
+  margin-top: 5px
+  margin-bottom: 30px
+  grid-column: 1 / 4
+  justify-self: center
+  @include utils.media(1000px)
+    width: 130px
+    height: 16px
+    margin-top: 24px
+    margin-bottom: 50px
+
+.footer__nav
+  grid-column: 1 / 3
+  display: flex
+  gap: 40px
+  padding-right: 10px
+  margin-bottom: 20px
+  ul
+    display: flex
+    flex-direction: column
+    gap: 13px
+  @include utils.media(1000px)
+    grid-column: 1 / 2
+    margin-bottom: 0
+
+.footer__nav-item
+  @include utils.medium-light
+  &_emphasis
+    @include utils.medium-bold
+    color: utils.$primary-color
+    padding-top: 10px
+    margin-top: auto
+
+.footer__contacts
+  grid-column: 1 / 4
+  grid-row: 3 / 4
+  @include utils.medium-light
+  display: block
+  font-style: normal
+  margin-bottom: 25px
+  @include utils.media(1000px)
+    grid-column: 2 / 3
+    grid-row: 2 / 3
+    margin-bottom: 0
+
+.footer__heading
+  @include utils.medium-light
+  text-decoration: underline
+  text-underline-offset: 3px
+  margin-bottom: 15px
+
+.footer__contacts-item
+  margin-bottom: 10px
+  &_inline
+    display: inline
+    margin-right: 20px
+
+.footer__socials
+  grid-column: 3 / 4
+  grid-row: 2 / 3
+  ul
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+
+.footer__social-icon
+  max-width: 22px
+  max-height: 22px
+  padding: 2px
+  a .icon
+    fill: utils.$primary-color
+
+.footer__copyright
+  grid-column: 1 / 4
+  grid-row: 4 / 5
+  @include utils.media(1000px)
+    grid-column: 3 / 4
+    grid-row: 2 / 3
+    align-self: end
+
+.footer__copyright
+  @include utils.medium-light

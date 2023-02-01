@@ -48,7 +48,7 @@
           </svg>
         </span>
       </button>
-      <a class="header__phone header__desktop" href="tel:+380978889292">+38 097 888 92 92</a>
+      <a class="header__desktop" href="tel:+380978889292">+38 097 888 92 92</a>
       <button class="search">
         <svg class="icon">
           <use href="#search-icon"></use>
@@ -68,7 +68,7 @@
       <li class="breadcrumb__item">Жіночі вишиванки</li>
     </ul>
   </nav>
-  <div class="grid container">
+  <div class="catalog-grid container">
     <aside class="filter">
       <div class="filter__group filter__group_open">
         <button class="filter__title chevron">Розмір
@@ -369,21 +369,92 @@
         </button>
         <div class="pagination__pages-block">
           <ul class="pagination__page-list">
-            <li class="pagination__page-item"><a href=""></a>1</li>
-            <li class="pagination__page-item"><a href=""></a>2</li>
-            <li class="pagination__page-item"><a href=""></a>3</li>
-            <li class="pagination__page-item"><a href=""></a>...</li>
-            <li class="pagination__page-item"><a href=""></a>6</li>
-            <li class="pagination__page-item"><a href=""></a>Наступна</li>
+            <li class="pagination__page-item pagination__page-item_disabled"><a href="">1</a></li>
+            <li class="pagination__page-item"><a href="">2</a></li>
+            <li class="pagination__page-item"><a href="">3</a></li>
+            <li class="pagination__page-item pagination__page-item_dots"><a href="">...</a></li>
+            <li class="pagination__page-item"><a href="">6</a></li>
+            <li class="pagination__page-item"><a href="">Наступна</a></li>
           </ul>
         </div>
       </div>
     </main>
   </div>
-  <footer></footer>
+  <footer class="footer">
+    <button class="scroll-top-btn"><svg class="icon">
+        <use href="#up-arrow">
+        </use>
+      </svg></a></button>
+    <div class="footer__grid container">
+      <div class="logo footer__logo">
+        <svg class="icon">
+          <use href="#logo"></use>
+        </svg>
+      </div>
+      <div class="footer__nav">
+        <ul>
+          <li class="footer__nav-item"><a href="">Про нас</a></li>
+          <li class="footer__nav-item"><a href="">Команда</a></li>
+          <li class="footer__nav-item"><a href="">Блог</a></li>
+          <li class="footer__nav-item footer__nav-item_emphasis"><a href="">Drabyna</a></li>
+        </ul>
+        <ul>
+          <li class="footer__nav-item"><a href="">Цікава інформація</a></li>
+          <li class="footer__nav-item"><a href="">Вакансії</a></li>
+          <li class="footer__nav-item"><a href="">Доставка та оплата</a></li>
+          <li class="footer__nav-item footer__nav-item_emphasis"><a href="">Етнодім Маніфест</a></li>
+        </ul>
+      </div>
+      <address class="footer__contacts">
+        <h4 class="footer__heading">Контакти</h4>
+        <p class="footer__contacts-item"><a href="tel:+380978889292">+38 097 888 92 92</a></p>
+        <p class="footer__contacts-item">Україна, м. Київ, вул. Верхній Вал 58/28</p>
+        <p class="footer__contacts-item footer__contacts-item_inline">пн-пт 10:00-20:00</p>
+        <p class="footer__contacts-item footer__contacts-item_inline">сб-нд 11:00-19:00</p>
+      </address>
+      <div class="footer__socials">
+        <h4 class="footer__heading">Соціальні мережі</h4>
+        <ul>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#facebook-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#youtube-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#mail-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#pinterest-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#instagram-social">
+                </use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p>&copy; «Етнодім» 2009-2021</p>
+      </div>
+    </div>
+  </footer>
 
   <!--! SVG Sprites -->
-  <svg width="0" height="0">
+  <svg width="0" height="0" class="hidden">
     <!-- fill="#050007" -->
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 17" id="logo">
       <path
@@ -408,39 +479,46 @@
       <!-- stroke="#000" -->
       <path d="m1 1 4 4 4-4"></path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 16 17" id="circle-arrow">
-      <path fill="#000"
+    <!-- fill="#000" -->
+    <symbol viewBox="0 0 16 17" id="circle-arrow">
+      <path
         d="M8.338 7.256h6.693V.562h-1.125V5.27l-.92-.918c-2.795-2.797-7.345-2.797-10.142 0-2.796 2.796-2.796 7.346 0 10.142a7.18 7.18 0 0 0 10.143 0l-.796-.795a6.054 6.054 0 0 1-8.551 0 6.054 6.054 0 0 1 0-8.552 6.054 6.054 0 0 1 8.551 0l.985.985H8.338v1.125Z">
       </path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 18 31" id="up-arrow">
-      <path stroke="#DA1F39" d="M9.267 31V1m0 0L17 8.7M9.267 1 1 8.7"></path>
+    <!-- stroke="#DA1F39" -->
+    <symbol viewBox="0 0 18 31" id="up-arrow">
+      <path d="M9.267 31V1m0 0L17 8.7M9.267 1 1 8.7"></path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 18 18" id="facebook-social">
-      <path fill="#DA1F39"
+    <!-- fill="#DA1F39" -->
+    <symbol viewBox="0 0 18 18" id="facebook-social">
+      <path
         d="M16.333.1H1.667a.906.906 0 0 0-.649.276.951.951 0 0 0-.268.664v15.028c0 .25.097.488.268.665a.905.905 0 0 0 .649.275h7.897V10.47H7.42V7.91h2.143V6.033c0-2.184 1.301-3.374 3.208-3.374a17.5 17.5 0 0 1 1.92.1v2.274h-1.315c-1.034 0-1.236.505-1.236 1.244v1.63h2.473l-.321 2.56H12.14v6.542h4.192a.905.905 0 0 0 .649-.275.951.951 0 0 0 .268-.665V1.04a.951.951 0 0 0-.268-.664.906.906 0 0 0-.649-.275Z">
       </path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 17 17" id="instagram-social">
-      <path fill="#DA1F39"
+    <!-- fill="#DA1F39" -->
+    <symbol viewBox="0 0 17 17" id="instagram-social">
+      <path
         d="M16.454 5a6.268 6.268 0 0 0-.384-2.08 4.343 4.343 0 0 0-.952-1.498 4.218 4.218 0 0 0-1.462-.976 5.927 5.927 0 0 0-2.003-.394C10.77.012 10.49 0 8.253 0 6.014 0 5.727 0 4.852.052a5.927 5.927 0 0 0-2.003.394 4.215 4.215 0 0 0-1.462.976 4.34 4.34 0 0 0-.952 1.497 6.29 6.29 0 0 0-.384 2.053C.011 5.876 0 6.162 0 8.456s0 2.587.051 3.485a6.33 6.33 0 0 0 .384 2.054 4.34 4.34 0 0 0 .953 1.497c.416.426.914.758 1.462.976.64.256 1.317.4 2.003.422.883.04 1.162.053 3.4.053 2.24 0 2.526 0 3.402-.053a5.913 5.913 0 0 0 2.003-.393 4.224 4.224 0 0 0 1.461-.976c.416-.426.74-.936.953-1.497.241-.658.37-1.351.384-2.055.04-.903.051-1.19.051-3.484C16.505 6.19 16.505 5.9 16.454 5Zm-8.207 7.794c-2.34 0-4.237-1.943-4.237-4.342 0-2.4 1.896-4.343 4.237-4.343 1.124 0 2.202.458 2.997 1.272a4.397 4.397 0 0 1 1.241 3.07 4.397 4.397 0 0 1-1.241 3.071 4.186 4.186 0 0 1-2.997 1.272Zm4.407-7.833a.967.967 0 0 1-.7-.296 1.013 1.013 0 0 1-.289-.716 1.033 1.033 0 0 1 .29-.716.986.986 0 0 1 .698-.296.967.967 0 0 1 .699.296 1.014 1.014 0 0 1 .289.716 1 1 0 0 1-.987 1.012Z">
       </path>
-      <path fill="#DA1F39"
+      <path
         d="M8.248 11.272c1.52 0 2.753-1.263 2.753-2.82C11 6.892 9.768 5.63 8.248 5.63S5.495 6.893 5.495 8.45c0 1.558 1.233 2.821 2.753 2.821Z">
       </path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 18 15" id="mail-social">
-      <path fill="#DA1F39"
+    <!-- fill="#DA1F39" -->
+    <symbol viewBox="0 0 18 15" id="mail-social">
+      <path
         d="m.357 4.226 8.371 4.461a.578.578 0 0 0 .544 0l8.371-4.46v7.749c0 .668-.25 1.311-.697 1.797a2.529 2.529 0 0 1-1.712.816l-.144.003H2.91c-.652 0-1.28-.255-1.754-.714a2.644 2.644 0 0 1-.796-1.754l-.004-.148v-7.75ZM2.911.101H15.09c.652 0 1.28.255 1.753.714.475.46.76 1.087.796 1.754l.004.148v.148L9 7.471.357 2.865v-.148c0-.668.25-1.311.698-1.797A2.528 2.528 0 0 1 2.766.105L2.911.1H15.09 2.91Z">
       </path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 18 19" id="pinterest-social">
-      <path fill="#DA1F39"
+    <!-- fill="#DA1F39" -->
+    <symbol viewBox="0 0 18 19" id="pinterest-social">
+      <path
         d="M9 .417C4.227.417.36 4.381.36 9.27c0 4.89 3.868 8.854 8.64 8.854 4.771 0 8.64-3.964 8.64-8.854C17.64 4.38 13.77.417 9 .417Zm.59 10.951c-.554-.043-.786-.324-1.22-.594-.238 1.283-.53 2.513-1.394 3.156-.267-1.94.39-3.395.697-4.942-.521-.9.062-2.708 1.162-2.263 1.352.55-1.172 3.343.523 3.693 1.769.363 2.492-3.147 1.395-4.287-1.586-1.648-4.615-.038-4.242 2.321.09.577.672.752.232 1.548-1.014-.23-1.318-1.05-1.278-2.144.062-1.789 1.569-3.042 3.079-3.214 1.91-.218 3.704.718 3.952 2.56.278 2.08-.863 4.329-2.905 4.166Z">
       </path>
     </symbol>
-    <symbol fill="none" viewBox="0 0 19 14" id="youtube-social">
-      <path fill="#DA1F39"
+    <!-- fill="#DA1F39" -->
+    <symbol viewBox="0 0 19 14" id="youtube-social">
+      <path
         d="M18.602 2.198a2.45 2.45 0 0 0-.611-1.068 2.367 2.367 0 0 0-1.044-.624C15.465.101 9.51.101 9.51.101S3.566.09 2.07.506a2.366 2.366 0 0 0-1.043.624 2.45 2.45 0 0 0-.61 1.068A25.9 25.9 0 0 0 .005 6.91a26.251 26.251 0 0 0 .414 4.69c.11.404.32.772.61 1.07.288.296.647.512 1.041.626 1.482.405 7.441.405 7.441.405s5.94 0 7.437-.405a2.376 2.376 0 0 0 1.044-.626c.29-.297.5-.666.61-1.07a26.12 26.12 0 0 0 .397-4.69c.01-1.581-.121-3.156-.396-4.712ZM7.608 9.823V3.985l4.957 2.925-4.957 2.913Z">
       </path>
     </symbol>

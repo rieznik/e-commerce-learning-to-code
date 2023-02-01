@@ -24,7 +24,7 @@
   a
     @include utils.small-semibold
 
-.grid
+.catalog-grid
   display: grid
   grid-template-columns: 15% 83.5%
   justify-content: space-between
@@ -53,7 +53,6 @@
 .filter__item
   color: utils.$dark-grey
   @include utils.small-light
-  @include utils.fix-numbers
   margin-bottom: 5px
   display: flex
   gap: 5px
@@ -68,8 +67,10 @@
 
 .catalog
   grid-column: 1 / 3
+  margin-bottom: 50px
   @include utils.media(1000px)
     grid-column: 2 / 3
+    margin-bottom: 130px
 
 .catalog__heading
   display: flex
@@ -82,13 +83,13 @@
     flex-wrap: nowrap
 
 .title
-  @include utils.dela-small
+  @include utils.accent-small
   line-height: 140.3%
   text-transform: uppercase
   text-align: end
   flex-basis: 100%
   @include utils.media(1000px)
-    @include utils.dela-medium
+    @include utils.accent-medium
     order: 2
 
 .layout
@@ -160,11 +161,9 @@
 .product__price
   @include utils.medium-bold
   line-height: 166.2%
-  @include utils.fix-numbers
 
 .pagination
   display: grid
-  margin-bottom: 50px
   @include utils.media(1000px)
     grid-template-columns: repeat(3, 1fr)
 
@@ -179,6 +178,7 @@
   & span
     height: 1.15em
     width: 1em
+    fill: utils.$black
   @include utils.media(1000px)
     grid-column: 2 / 3
 
@@ -195,3 +195,8 @@
 
 .pagination__page-item
   @include utils.medium-bold
+  &_disabled
+    pointer-events: none
+    color: utils.$disabled-grey
+  &_dots
+    @include utils.roboto-medium

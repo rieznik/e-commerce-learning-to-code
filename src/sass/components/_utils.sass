@@ -2,7 +2,9 @@
 $primary-color: #DA1F39
 $white: #ffffff
 $black: #000000
+$disabled-grey: #B0B0B0
 $light-grey: #C4C4C4
+$footer-grey: #f4f4f4
 $dark-grey: #565656
 
 @mixin reset-button
@@ -56,17 +58,22 @@ $roboto: Roboto, sans-serif
   font-size: 1.143rem // 16px
   font-weight: 700
 
-@mixin dela-small
+@mixin accent-small
   font-family: $dela
   font-size: 1.286rem // 18px
   font-weight: 400
 
-@mixin dela-medium
+@mixin accent-medium
   font-family: $dela
   font-size: 2.571rem // 36px
   font-weight: 400
 
-@mixin dela-large
+@mixin accent-large
   font-family: $dela
   font-size: 4.571rem // 64px
+  font-weight: 400
+
+@mixin roboto-medium
+  font-family: $roboto
+  font-size: 1rem
   font-weight: 400
