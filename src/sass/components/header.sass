@@ -102,13 +102,17 @@
     min-width: 13px
     min-height: 13px
 
-.header-submenu
+.header-submenu-desktop
   position: absolute
-  padding-top: 70px
+  width: 100%
+  background-color: utils.$white
+  z-index: 1
+
+.header-submenu
+  padding-top: 35px
   display: flex
   justify-content: space-between
   gap: 10px
-  width: 100%
 
 .header-submenu__categories-wrapper
   @include utils.accent-small
@@ -134,7 +138,7 @@
 .header-submenu__image
   flex-basis: 21%
   & img
-    width: 100%
+    max-height: 242px
 
 .active-link-primary
   color: utils.$primary-color

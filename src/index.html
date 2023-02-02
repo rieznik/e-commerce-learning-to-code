@@ -10,42 +10,15 @@
 </head>
 
 <body>
-  <header class="container">
-    <div class="header">
+
+  <!--! HEADER -->
+  <header>
+    <div class="header container">
       <div class="header__left">
         <nav class="header__desktop">
           <ul class="nav-list">
             <li class="nav-list__item nav-list__item_active active-link-primary">
               <a href="/">Каталог</a>
-              <div class="header-submenu container">
-                <ul class="header-submenu__categories-wrapper">
-                  <li class="header-submenu__category-item header-submenu__category-item_active"><a href="">жінкам</a>
-                  </li>
-                  <li class="header-submenu__category-item"><a href="">чоловікам</a></li>
-                  <li class="header-submenu__category-item"><a href="">дітям</a></li>
-                  <li class="header-submenu__category-item"><a href="">аксесуари</a></li>
-                  <li class="header-submenu__category-item"><a href="">дім</a></li>
-                </ul>
-                <ul class="header-submenu__category-sublist">
-                  <li><a href="">Вишиті сукні</a></li>
-                  <li class="active-link-primary"><a href="">Жіночі вишиванки</a></li>
-                  <li><a href="">Конструктор вишиванки</a></li>
-                  <li><a href="">Світшоти та светри</a></li>
-                  <li><a href="">Футболки</a></li>
-                  <li><a href="">Брюки та комбінезони</a></li>
-                  <li><a href="">Пальта та куртки</a></li>
-                  <li><a href="">Спідниці</a></li>
-                </ul>
-                <div class="header-submenu__image">
-                  <picture>
-                    <source type="image/avif"
-                      srcset="images/header/category1-394w.avif 1x, images/header/category1-778w.avif 2x" />
-                    <source type="image/jpg"
-                      srcset="images/header/category1-394w.jpg 1x, images/header/category1-778w.jpg 2x" />
-                    <img class="" src="images/header/category1-778w.jpg" alt="" />
-                  </picture>
-                </div>
-              </div>
             </li>
             <li class="nav-list__item"><a href="/">Знижки</a></li>
             <li class="nav-list__item"><a href="/">Блог</a></li>
@@ -93,8 +66,435 @@
         </button>
       </div>
     </div>
+    <div class="header-submenu-desktop">
+      <div class="header-submenu container">
+        <ul class="header-submenu__categories-wrapper">
+          <li class="header-submenu__category-item header-submenu__category-item_active"><a href="">жінкам</a>
+          </li>
+          <li class="header-submenu__category-item"><a href="">чоловікам</a></li>
+          <li class="header-submenu__category-item"><a href="">дітям</a></li>
+          <li class="header-submenu__category-item"><a href="">аксесуари</a></li>
+          <li class="header-submenu__category-item"><a href="">дім</a></li>
+        </ul>
+        <ul class="header-submenu__category-sublist">
+          <li><a href="">Вишиті сукні</a></li>
+          <li class="active-link-primary"><a href="">Жіночі вишиванки</a></li>
+          <li><a href="">Конструктор вишиванки</a></li>
+          <li><a href="">Світшоти та светри</a></li>
+          <li><a href="">Футболки</a></li>
+          <li><a href="">Брюки та комбінезони</a></li>
+          <li><a href="">Пальта та куртки</a></li>
+          <li><a href="">Спідниці</a></li>
+        </ul>
+        <div class="header-submenu__image">
+          <picture>
+            <source type="image/avif"
+              srcset="images/header/category1-394w.avif 1x, images/header/category1-778w.avif 2x" />
+            <source type="image/jpg"
+              srcset="images/header/category1-394w.jpg 1x, images/header/category1-778w.jpg 2x" />
+            <img class="" src="images/header/category1-778w.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </div>
   </header>
 
+  <!--! MAIN -->
+  <nav class="breadcrumb container">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item"><a href="/">Головна</a></li>
+      <li class="breadcrumb__item"><a href="/zhinkam/">Жінкам</a></li>
+      <li class="breadcrumb__item">Жіночі вишиванки</li>
+    </ul>
+  </nav>
+  <div class="catalog-grid container">
+    <aside class="filter">
+      <div class="filter__group filter__group_open">
+        <button class="filter__title chevron">Розмір
+          <span class="chevron__icon"><svg class="icon">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="filter__item-list">
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size1">
+            <label for="size1">32 | XXS (53)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size2">
+            <label for="size2">34 | XS (60)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size3">
+            <label for="size3">36 | S (60)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size4">
+            <label for="size4">38 | M (60)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size5">
+            <label for="size5">40 | L (60)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size6">
+            <label for="size6">42 | XL (58)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size7">
+            <label for="size6">46 | XXL (13)</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="size8">
+            <label for="size8">48 | XХXL (4)</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter__group filter__group_open">
+        <button class="filter__title chevron">Колір
+          <span class="chevron__icon"><svg class="icon">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="filter__item-list">
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="white">
+            <label for="white">білий</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="black">
+            <label for="black">чорний</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="beige">
+            <label for="beige">бежевий</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="green">
+            <label for="green">зелений</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="blue">
+            <label for="size5">синій</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter__group">
+        <button class="filter__title chevron">Сезон
+          <span class="chevron__icon"><svg class="icon">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="filter__item-list">
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="summer">
+            <label for="summer">літо</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="spring-autumn">
+            <label for="spring-autumn">весна-осінь</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="winter">
+            <label for="winter">зима</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter__group">
+        <button class="filter__title chevron">Тканина
+          <span class="chevron__icon"><svg class="icon">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="filter__item-list">
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="cotton">
+            <label for="cotton">котон</label>
+          </div>
+          <div class="filter__item">
+            <input type="checkbox" name="size1" id="linnen">
+            <label for="linnen">льон</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter__group filter__group_open">
+        <button class="filter__title chevron">Рукав
+          <span class="chevron__icon"><svg class="icon">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="filter__item-list">
+          <div class="filter__item-list">
+            <div class="filter__item">
+              <input type="checkbox" name="size1" id="short">
+              <label for="short">короткий</label>
+            </div>
+            <div class="filter__item">
+              <input type="checkbox" name="size1" id="long">
+              <label for="long">довгий</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="catalog">
+      <div class="catalog__heading">
+        <h2 class="title">Жіночі вишиванки</h2>
+        <div class="filter-mobile">
+          <button class="filter-mobile__btn chevron">Фільтри
+            <span class="chevron__icon"><svg class="icon">
+                <use href="#chevron-down"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="layout">
+          <button class="layout__btn layout__btn_four layout__btn_active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="layout__btn layout__btn_nine">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="sort">
+          Сортувати за:
+          <button class="sort__btn chevron">новинки
+            <span class="chevron__icon"><svg class="icon">
+                <use href="#chevron-down"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <section class="product-list">
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image1-334w.avif 1x, images/catalog/mobile/image1-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image1-507w.avif 1x, images/catalog/desktop/image1-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image1-334w.jpg 1x, images/catalog/mobile/image1-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image1-507w.jpg 1x, images/catalog/desktop/image1-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Вишиванка з рослинним орнаментом Lito</a></h3>
+            <span class="product__price">2 800 грн.</span>
+          </header>
+        </article>
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image2-334w.avif 1x, images/catalog/mobile/image2-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image2-507w.avif 1x, images/catalog/desktop/image2-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image2-334w.jpg 1x, images/catalog/mobile/image2-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image2-507w.jpg 1x, images/catalog/desktop/image2-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image2-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Вишиванка блакитного кольору з рослинним орнаментом Fialka</a></h3>
+            <span class="product__price">3 400 грн.</span>
+          </header>
+        </article>
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image3-334w.avif 1x, images/catalog/mobile/image3-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image3-507w.avif 1x, images/catalog/desktop/image3-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image3-334w.jpg 1x, images/catalog/mobile/image3-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image3-507w.jpg 1x, images/catalog/desktop/image3-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Лляна вишиванка з геометричним орнаментом Nezalezhni</a></h3>
+            <span class="product__price">4 200 грн.</span>
+          </header>
+        </article>
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image4-334w.avif 1x, images/catalog/mobile/image4-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image4-507w.avif 1x, images/catalog/desktop/image4-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image4-334w.jpg 1x, images/catalog/mobile/image4-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image4-507w.jpg 1x, images/catalog/desktop/image4-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image4-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Вишиванка з рослинним орнаментом Kashtan</a></h3>
+            <span class="product__price">3 800 грн.</span>
+          </header>
+        </article>
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image5-334w.avif 1x, images/catalog/mobile/image5-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image5-507w.avif 1x, images/catalog/desktop/image5-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image5-334w.jpg 1x, images/catalog/mobile/image5-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image5-507w.jpg 1x, images/catalog/desktop/image5-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image5-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Легка блузка вільного крою з орнаментом Indi</a></h3>
+            <span class="product__price">3 800 грн.</span>
+          </header>
+        </article>
+        <article class="product">
+          <a href="">
+            <picture>
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image6-334w.avif 1x, images/catalog/mobile/image6-668w.avif 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image6-507w.avif 1x, images/catalog/desktop/image6-1014w.avif 2x" />
+              <source media="(max-width: 999px)"
+                srcset="images/catalog/mobile/image6-334w.jpg 1x, images/catalog/mobile/image6-668w.jpg 2x" />
+              <source media="(min-width: 1000px)"
+                srcset="images/catalog/desktop/image6-507w.jpg 1x, images/catalog/desktop/image6-1014w.jpg 2x" />
+              <img class="product__image" src="images/catalog/desktop/image6-1014w.jpg" alt="" />
+            </picture>
+          </a>
+          <header>
+            <h3 class="product__title"><a href="">Біла вишиванка вільного крою Svitanok</a></h3>
+            <span class="product__price">2 980 грн.</span>
+          </header>
+        </article>
+      </section>
+      <div class="pagination">
+        <button class="pagination__load-more">Показати більше
+          <span>
+            <svg class="icon">
+              <use href="#circle-arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="pagination__pages-block">
+          <ul class="pagination__page-list">
+            <li class="pagination__page-item pagination__page-item_disabled"><a href="">1</a></li>
+            <li class="pagination__page-item"><a href="">2</a></li>
+            <li class="pagination__page-item"><a href="">3</a></li>
+            <li class="pagination__page-item pagination__page-item_dots"><a href="">...</a></li>
+            <li class="pagination__page-item"><a href="">6</a></li>
+            <li class="pagination__page-item"><a href="">Наступна</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--! FOOTER -->
+  <footer class="footer">
+    <button class="scroll-top-btn">
+      <svg class="icon">
+        <use href="#up-arrow">
+        </use>
+      </svg>
+    </button>
+    <div class="footer__grid container">
+      <a class="logo footer__logo" href="">
+        <svg class="icon">
+          <use href="#logo"></use>
+        </svg>
+      </a>
+      <div class="footer__nav">
+        <ul>
+          <li class="footer__nav-item"><a href="">Про нас</a></li>
+          <li class="footer__nav-item"><a href="">Команда</a></li>
+          <li class="footer__nav-item"><a href="">Блог</a></li>
+          <li class="footer__nav-item footer__nav-item_emphasis"><a href="">Drabyna</a></li>
+        </ul>
+        <ul>
+          <li class="footer__nav-item"><a href="">Цікава інформація</a></li>
+          <li class="footer__nav-item"><a href="">Вакансії</a></li>
+          <li class="footer__nav-item"><a href="">Доставка та оплата</a></li>
+          <li class="footer__nav-item footer__nav-item_emphasis"><a href="">Етнодім Маніфест</a></li>
+        </ul>
+      </div>
+      <address class="footer__contacts">
+        <h4 class="footer__heading">Контакти</h4>
+        <p class="footer__contacts-item"><a href="tel:+380978889292">+38 097 888 92 92</a></p>
+        <p class="footer__contacts-item">Україна, м. Київ, вул. Верхній Вал 58/28</p>
+        <p class="footer__contacts-item footer__contacts-item_inline">пн-пт 10:00-20:00</p>
+        <p class="footer__contacts-item footer__contacts-item_inline">сб-нд 11:00-19:00</p>
+      </address>
+      <div class="footer__socials">
+        <h4 class="footer__heading">Соціальні мережі</h4>
+        <ul>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#facebook-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#youtube-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#mail-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#pinterest-social">
+                </use>
+              </svg></a>
+          </li>
+          <li class="footer__social-icon"><a href="">
+              <svg class="icon">
+                <use href="#instagram-social">
+                </use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p>&copy; «Етнодім» 2009-2021</p>
+      </div>
+    </div>
+  </footer>
   <!--! SVG Sprites -->
   <svg width="0" height="0" class="hidden">
     <!-- fill="#050007" -->
