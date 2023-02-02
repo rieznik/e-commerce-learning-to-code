@@ -3,6 +3,7 @@ $primary-color: #DA1F39
 $white: #ffffff
 $black: #000000
 $disabled-grey: #B0B0B0
+$menu-inactive-grey: #9A9A9A
 $light-grey: #C4C4C4
 $footer-grey: #f4f4f4
 $dark-grey: #565656
@@ -10,9 +11,6 @@ $dark-grey: #565656
 @mixin reset-button
   border: none
   background: none
-
-@mixin fix-numbers
-  font-feature-settings: 'pnum' on, 'lnum' on
 
 @mixin media($width)
   @media screen and (min-width: $width)

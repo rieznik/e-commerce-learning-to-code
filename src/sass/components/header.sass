@@ -35,11 +35,6 @@
 .nav-list__item
   display: inline
 
-.nav-list__item_active
-  a
-    color: utils.$primary-color
-    @include utils.large-bold
-
 .header__mobile-menu
   @include utils.media(1000px)
     display: none
@@ -106,3 +101,41 @@
     font-size: 0.714rem
     min-width: 13px
     min-height: 13px
+
+.header-submenu
+  position: absolute
+  padding-top: 70px
+  display: flex
+  justify-content: space-between
+  gap: 10px
+  width: 100%
+
+.header-submenu__categories-wrapper
+  @include utils.accent-small
+  color: utils.$menu-inactive-grey
+  text-transform: uppercase
+  flex-basis: 21%
+
+.header-submenu__category-item
+  margin-bottom: 25px
+  &_active
+    color: utils.$black
+
+.header-submenu__category-sublist
+  color: utils.$black
+  @include utils.medium-light
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  gap: 18px
+  flex-basis: 55%
+  height: 100px
+
+.header-submenu__image
+  flex-basis: 21%
+  & img
+    width: 100%
+
+.active-link-primary
+  color: utils.$primary-color
+  font-weight: 700
