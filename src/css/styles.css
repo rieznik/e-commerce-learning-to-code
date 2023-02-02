@@ -289,10 +289,9 @@ button {
 .header-submenu__category-item {
   margin-bottom: 25px;
 }
-.header-submenu__category-item_active {
+.header-submenu__category-item_active, .header-submenu__category-item:hover {
   color: #000000;
 }
-
 .header-submenu__category-sublist {
   color: #000000;
   font-size: 1rem;
@@ -304,7 +303,9 @@ button {
   flex-basis: 55%;
   height: 100px;
 }
-
+.header-submenu__category-sublist li {
+  width: 33.3%;
+}
 .header-submenu__image {
   flex-basis: 21%;
 }
@@ -312,7 +313,7 @@ button {
   max-height: 242px;
 }
 
-.active-link-primary {
+.active-link-primary, .header-submenu__category-sublist li > a:hover {
   color: #DA1F39;
   font-weight: 700;
 }

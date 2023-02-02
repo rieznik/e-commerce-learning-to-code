@@ -124,6 +124,8 @@
   margin-bottom: 25px
   &_active
     color: utils.$black
+  &:hover
+    @extend .header-submenu__category-item_active
 
 .header-submenu__category-sublist
   color: utils.$black
@@ -134,6 +136,10 @@
   gap: 18px
   flex-basis: 55%
   height: 100px
+  & li
+    width: 33.3%
+  & li > a:hover
+    @extend .active-link-primary
 
 .header-submenu__image
   flex-basis: 21%
