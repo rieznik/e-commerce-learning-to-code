@@ -8,7 +8,7 @@
   display: flex
   justify-content: space-between
   align-items: center
-  @include utils.media(1000px)
+  @include utils.media-medium
     padding: 25px 0
     align-items: center
     margin-bottom: 10px
@@ -25,7 +25,7 @@
 
 .header__desktop
   display: none
-  @include utils.media(1000px)
+  @include utils.media-medium
     display: flex
 
 .nav-list
@@ -36,7 +36,7 @@
   display: inline
 
 .header__mobile-menu
-  @include utils.media(1000px)
+  @include utils.media-medium
     display: none
 
 .burger-menu
@@ -61,7 +61,7 @@
   height: 8px
   & .icon
     fill: utils.$black
-  @include utils.media(1000px)
+  @include utils.media-medium
     width: 130px
     height: 16px
 
@@ -70,7 +70,7 @@
   height: 17px
   & .icon
     fill: utils.$black
-  @include utils.media(1000px)
+  @include utils.media-medium
     width: 20px
     height: 20px
 
@@ -81,7 +81,7 @@
   & .icon
     fill: none
     stroke: utils.$black
-  @include utils.media(1000px)
+  @include utils.media-medium
     width: 20px
     height: 24px
 
@@ -97,7 +97,7 @@
   border-radius: 50%
   right: -3px
   bottom: -3px
-  @include utils.media(1000px)
+  @include utils.media-medium
     font-size: 0.714rem
     min-width: 13px
     min-height: 13px
@@ -142,6 +142,7 @@
     @extend .active-link-primary
 
 .header-submenu__image
+  text-align: end
   flex-basis: 21%
   & img
     max-height: 242px

@@ -307,6 +307,7 @@ button {
   width: 33.3%;
 }
 .header-submenu__image {
+  text-align: end;
   flex-basis: 21%;
 }
 .header-submenu__image img {

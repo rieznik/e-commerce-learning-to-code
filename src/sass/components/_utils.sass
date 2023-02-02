@@ -12,8 +12,16 @@ $dark-grey: #565656
   border: none
   background: none
 
-@mixin media($width)
-  @media screen and (min-width: $width)
+@mixin media-small
+  @media screen and (min-width: 600px)
+    @content
+
+@mixin media-medium
+  @media screen and (min-width: 1000px)
+    @content
+
+@mixin media-large
+  @media screen and (min-width: 1300px)
     @content
 
 //! Font variables
