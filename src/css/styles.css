@@ -58,6 +58,10 @@
   box-sizing: border-box;
   font-feature-settings: "lnum" on;
 }
+*:focus-visible {
+  outline: 2px solid #DA1F39;
+  outline-offset: 5px;
+}
 
 html {
   font-family: Raleway, sans-serif;

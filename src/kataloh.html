@@ -12,7 +12,7 @@
 <body>
   <header class="header container">
     <div class="header__left">
-      <nav class="header__desktop">
+      <nav aria-label="Навігація" class="header__desktop">
         <ul class="nav-list">
           <li class="nav-list__item active-link-primary"><a href="/">Каталог</a></li>
           <li class="nav-list__item"><a href="/">Знижки</a></li>
@@ -21,7 +21,7 @@
         </ul>
       </nav>
       <div class="header__mobile-menu">
-        <button class="burger-menu">
+        <button aria-label="Навігація" class="burger-menu">
           <span class="burger-menu__line"></span>
           <span class="burger-menu__line"></span>
           <span class="burger-menu__line_short"></span>
@@ -29,39 +29,39 @@
       </div>
     </div>
     <a class="logo" href="">
-      <svg class="icon">
+      <svg aria-label="Логотип" class="icon">
         <use href="#logo"></use>
       </svg>
     </a>
     <div class="header__right">
-      <button class="chevron header__desktop">UA
-        <span class="chevron__icon">
+      <button aria-label="Мова" class="chevron header__desktop">UA
+        <span aria-hidden="true" class="chevron__icon">
           <svg class="icon">
             <use href="#chevron-down"></use>
           </svg>
         </span>
       </button>
-      <button class="chevron header__desktop ">₴
+      <button aria-label="Валюта" class="chevron header__desktop ">₴
         <span class="chevron__icon">
-          <svg class="icon">
+          <svg aria-hidden="true" class="icon">
             <use href="#chevron-down"></use>
           </svg>
         </span>
       </button>
-      <a class="header__desktop" href="tel:+380978889292">+38 097 888 92 92</a>
-      <button class="search">
-        <svg class="icon">
+      <a aria-label="Контакт, Номер телефону" class="header__desktop" href="tel:+380978889292">+38 097 888 92 92</a>
+      <button aria-label="Пошук" role="search" class="search">
+        <svg aria-hidden="true" class="icon">
           <use href="#search-icon"></use>
         </svg></button>
-      <button class="shopping-bag">
-        <svg class="icon">
+      <button aria-label="Корзина" class="shopping-bag">
+        <svg aria-hidden="true" class="icon">
           <use href="#shopping-bag-icon"></use>
         </svg>
-        <span class="shopping-bag__counter">1</span>
+        <span aria-label="Кількість товарів в корзині" class="shopping-bag__counter">1</span>
       </button>
     </div>
   </header>
-  <nav class="breadcrumb container">
+  <nav aria-label="Навігація" class="breadcrumb container">
     <ul class="breadcrumb__list">
       <li class="breadcrumb__item"><a href="/">Головна</a></li>
       <li class="breadcrumb__item"><a href="/zhinkam/">Жінкам</a></li>
@@ -69,10 +69,10 @@
     </ul>
   </nav>
   <div class="catalog-grid container">
-    <aside class="filter">
+    <aside aria-label="Фільтри" class="filter">
       <div class="filter__group filter__group_open">
         <button class="filter__title chevron">Розмір
-          <span class="chevron__icon"><svg class="icon">
+          <span aria-hidden="true" class="chevron__icon"><svg class="icon">
               <use href="#chevron-down"></use>
             </svg>
           </span>
@@ -114,7 +114,7 @@
       </div>
       <div class="filter__group filter__group_open">
         <button class="filter__title chevron">Колір
-          <span class="chevron__icon"><svg class="icon">
+          <span aria-hidden="true" class="chevron__icon"><svg class="icon">
               <use href="#chevron-down"></use>
             </svg>
           </span>
@@ -144,7 +144,7 @@
       </div>
       <div class="filter__group">
         <button class="filter__title chevron">Сезон
-          <span class="chevron__icon"><svg class="icon">
+          <span aria-hidden="true" class="chevron__icon"><svg class="icon">
               <use href="#chevron-down"></use>
             </svg>
           </span>
@@ -166,7 +166,7 @@
       </div>
       <div class="filter__group">
         <button class="filter__title chevron">Тканина
-          <span class="chevron__icon"><svg class="icon">
+          <span aria-hidden="true" class="chevron__icon"><svg class="icon">
               <use href="#chevron-down"></use>
             </svg>
           </span>
@@ -184,7 +184,7 @@
       </div>
       <div class="filter__group filter__group_open">
         <button class="filter__title chevron">Рукав
-          <span class="chevron__icon"><svg class="icon">
+          <span aria-hidden="true" class="chevron__icon"><svg class="icon">
               <use href="#chevron-down"></use>
             </svg>
           </span>
@@ -203,25 +203,25 @@
         </div>
       </div>
     </aside>
-    <main class="catalog">
+    <main aria-label="Каталог" class="catalog">
       <div class="catalog__heading">
         <h2 class="title">Жіночі вишиванки</h2>
         <div class="filter-mobile">
           <button class="filter-mobile__btn chevron">Фільтри
-            <span class="chevron__icon"><svg class="icon">
+            <span aria-hidden="true" class="chevron__icon"><svg class="icon">
                 <use href="#chevron-down"></use>
               </svg>
             </span>
           </button>
         </div>
-        <div class="layout">
-          <button class="layout__btn layout__btn_four layout__btn_active">
+        <div area-label="Макет каталогу" class="layout">
+          <button area-label="По два товари в ряд" class="layout__btn layout__btn_four layout__btn_active">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <button class="layout__btn layout__btn_nine">
+          <button area-label="По три товари в ряд" class="layout__btn layout__btn_nine">
             <span></span>
             <span></span>
             <span></span>
@@ -233,18 +233,18 @@
             <span></span>
           </button>
         </div>
-        <div class="sort">
+        <div aria-label="Сортування" class="sort">
           Сортувати за:
           <button class="sort__btn chevron">новинки
-            <span class="chevron__icon"><svg class="icon">
+            <span aria-hidden="true" class="chevron__icon"><svg class="icon">
                 <use href="#chevron-down"></use>
               </svg>
             </span>
           </button>
         </div>
       </div>
-      <section class="product-list">
-        <article class="product">
+      <section aria-label="Список товарів" class="product-list">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -255,7 +255,8 @@
                 srcset="images/catalog/mobile/image1-334w.jpg 1x, images/catalog/mobile/image1-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image1-507w.jpg 1x, images/catalog/desktop/image1-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg"
+                alt="Вишиванка з рослинним орнаментом Lito" />
             </picture>
           </a>
           <header>
@@ -263,7 +264,7 @@
             <span class="product__price">2 800 грн.</span>
           </header>
         </article>
-        <article class="product">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -274,7 +275,8 @@
                 srcset="images/catalog/mobile/image2-334w.jpg 1x, images/catalog/mobile/image2-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image2-507w.jpg 1x, images/catalog/desktop/image2-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image2-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image2-1014w.jpg"
+                alt="Вишиванка блакитного кольору з рослинним орнаментом Fialka" />
             </picture>
           </a>
           <header>
@@ -282,7 +284,7 @@
             <span class="product__price">3 400 грн.</span>
           </header>
         </article>
-        <article class="product">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -293,7 +295,8 @@
                 srcset="images/catalog/mobile/image3-334w.jpg 1x, images/catalog/mobile/image3-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image3-507w.jpg 1x, images/catalog/desktop/image3-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image1-1014w.jpg"
+                alt="Лляна вишиванка з геометричним орнаментом Nezalezhni" />
             </picture>
           </a>
           <header>
@@ -301,7 +304,7 @@
             <span class="product__price">4 200 грн.</span>
           </header>
         </article>
-        <article class="product">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -312,7 +315,8 @@
                 srcset="images/catalog/mobile/image4-334w.jpg 1x, images/catalog/mobile/image4-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image4-507w.jpg 1x, images/catalog/desktop/image4-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image4-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image4-1014w.jpg"
+                alt="Вишиванка з рослинним орнаментом Kashtan" />
             </picture>
           </a>
           <header>
@@ -320,7 +324,7 @@
             <span class="product__price">3 800 грн.</span>
           </header>
         </article>
-        <article class="product">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -331,7 +335,8 @@
                 srcset="images/catalog/mobile/image5-334w.jpg 1x, images/catalog/mobile/image5-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image5-507w.jpg 1x, images/catalog/desktop/image5-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image5-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image5-1014w.jpg"
+                alt="Легка блузка вільного крою з орнаментом Indi" />
             </picture>
           </a>
           <header>
@@ -339,7 +344,7 @@
             <span class="product__price">3 800 грн.</span>
           </header>
         </article>
-        <article class="product">
+        <article aria-label="Товар" class="product">
           <a href="">
             <picture>
               <source media="(max-width: 999px)"
@@ -350,7 +355,8 @@
                 srcset="images/catalog/mobile/image6-334w.jpg 1x, images/catalog/mobile/image6-668w.jpg 2x" />
               <source media="(min-width: 1000px)"
                 srcset="images/catalog/desktop/image6-507w.jpg 1x, images/catalog/desktop/image6-1014w.jpg 2x" />
-              <img class="product__image" src="images/catalog/desktop/image6-1014w.jpg" alt="" />
+              <img class="product__image" src="images/catalog/desktop/image6-1014w.jpg"
+                alt="Біла вишиванка вільного крою Svitanok" />
             </picture>
           </a>
           <header>
@@ -361,15 +367,15 @@
       </section>
       <div class="pagination">
         <button class="pagination__load-more">Показати більше
-          <span>
+          <span aria-hidden="true">
             <svg class="icon">
               <use href="#circle-arrow"></use>
             </svg>
           </span>
         </button>
-        <div class="pagination__pages-block">
+        <div aria-label="Навігація, Список сторінок" class="pagination__pages-block">
           <ul class="pagination__page-list">
-            <li class="pagination__page-item pagination__page-item_disabled"><a href="">1</a></li>
+            <li aria-disabled="true" class="pagination__page-item pagination__page-item_disabled"><a href="">1</a></li>
             <li class="pagination__page-item"><a href="">2</a></li>
             <li class="pagination__page-item"><a href="">3</a></li>
             <li class="pagination__page-item pagination__page-item_dots"><a href="">...</a></li>
@@ -381,19 +387,19 @@
     </main>
   </div>
   <footer class="footer">
-    <button class="scroll-top-btn">
-      <svg class="icon">
+    <button aria-label="Прокрутка вгору" class="scroll-top-btn">
+      <svg aria-hidden="true" class="icon">
         <use href="#up-arrow">
         </use>
       </svg>
     </button>
     <div class="footer__grid container">
       <a class="logo footer__logo" href="">
-        <svg class="icon">
+        <svg aria-label="Лого" class="icon">
           <use href="#logo"></use>
         </svg>
       </a>
-      <div class="footer__nav">
+      <div aria-label="Навігація" class="footer__nav">
         <ul>
           <li class="footer__nav-item"><a href="">Про нас</a></li>
           <li class="footer__nav-item"><a href="">Команда</a></li>
@@ -407,7 +413,7 @@
           <li class="footer__nav-item footer__nav-item_emphasis"><a href="">Етнодім Маніфест</a></li>
         </ul>
       </div>
-      <address class="footer__contacts">
+      <address aria-label="Контакти" class="footer__contacts">
         <h4 class="footer__heading">Контакти</h4>
         <p class="footer__contacts-item"><a href="tel:+380978889292">+38 097 888 92 92</a></p>
         <p class="footer__contacts-item">Україна, м. Київ, вул. Верхній Вал 58/28</p>
@@ -417,32 +423,32 @@
       <div class="footer__socials">
         <h4 class="footer__heading">Соціальні мережі</h4>
         <ul>
-          <li class="footer__social-icon"><a href="">
-              <svg class="icon">
+          <li aria-label="Фейсбук" class="footer__social-icon"><a href="">
+              <svg aria-hidden="true" class="icon">
                 <use href="#facebook-social">
                 </use>
               </svg></a>
           </li>
-          <li class="footer__social-icon"><a href="">
-              <svg class="icon">
+          <li aria-label="Ютуб" class="footer__social-icon"><a href="">
+              <svg aria-hidden="true" class="icon">
                 <use href="#youtube-social">
                 </use>
               </svg></a>
           </li>
-          <li class="footer__social-icon"><a href="">
-              <svg class="icon">
+          <li aria-label="Електронна пошта" class="footer__social-icon"><a href="">
+              <svg aria-hidden="true" class="icon">
                 <use href="#mail-social">
                 </use>
               </svg></a>
           </li>
-          <li class="footer__social-icon"><a href="">
-              <svg class="icon">
+          <li aria-label="Пінтерест" class="footer__social-icon"><a href="">
+              <svg aria-hidden="true" class="icon">
                 <use href="#pinterest-social">
                 </use>
               </svg></a>
           </li>
-          <li class="footer__social-icon"><a href="">
-              <svg class="icon">
+          <li aria-label="Інстаграм" class="footer__social-icon"><a href="">
+              <svg aria-hidden="true" class="icon">
                 <use href="#instagram-social">
                 </use>
               </svg></a>
